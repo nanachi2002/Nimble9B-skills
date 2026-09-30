@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1092"
+     viewBox="0 0 1180 1092" role="img"
+     aria-label="Nimble pre-step benchmark: 100% vs 50% accuracy against deepseek-v4.1-flash">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f131b"/><stop offset="100%" stop-color="#161d29"/>
+    </linearGradient>
+  </defs>
+  <rect width="1180" height="1092" fill="url(#bg)"/>
+
+  <text x="46" y="62" fill="#e8eef7" font-size="30" font-weight="700"
+        font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    Does a 9B classifier reading the question first make a big model answer better?
+  </text>
+  <text x="46" y="92" fill="#8e9cb0" font-size="14">
+    deepseek-v4.1-flash &#160;·&#160; 12 questions asked twice — once with the Nimble pre-step note, once without
+    &#160;·&#160; scored against fixed expected facts
+  </text>
+  <text x="46" y="113" fill="#5d6b7f" font-size="11.5"
+        font-family="ui-monospace, Consolas, monospace">
+    generated 2026-09-30T13:47:53 &#160;·&#160; reproducible: python benchmarks/run_benchmark.py --live
+  </text>
+  <line x1="46" y1="122" x2="1134" y2="122" stroke="#2a3444"/>
+
+  <g>
+    <rect x="46.0" y="148" width="206.4" height="104" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="64.0" y="190" fill="#6fc3e8" font-size="30" font-weight="700"
+          font-family="ui-monospace, Consolas, monospace">100%</text>
+    <text x="64.0" y="216" fill="#e8eef7" font-size="13" font-weight="600">answered correctly</text>
+    <text x="64.0" y="236" fill="#5d6b7f" font-size="11.5">with pre-step</text>
+  </g>
+  <g>
+    <rect x="266.4" y="148" width="206.4" height="104" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="284.4" y="190" fill="#e8825f" font-size="30" font-weight="700"
+          font-family="ui-monospace, Consolas, monospace">50%</text>
+    <text x="284.4" y="216" fill="#e8eef7" font-size="13" font-weight="600">answered correctly</text>
+    <text x="284.4" y="236" fill="#5d6b7f" font-size="11.5">without</text>
+  </g>
+  <g>
+    <rect x="486.8" y="148" width="206.4" height="104" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="504.8" y="190" fill="#e8eef7" font-size="30" font-weight="700"
+          font-family="ui-monospace, Consolas, monospace">8.0x</text>
+    <text x="504.8" y="216" fill="#e8eef7" font-size="13" font-weight="600">faster median reply</text>
+    <text x="504.8" y="236" fill="#5d6b7f" font-size="11.5">947ms vs 7.6s</text>
+  </g>
+  <g>
+    <rect x="707.2" y="148" width="206.4" height="104" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="725.2" y="190" fill="#6fc3e8" font-size="30" font-weight="700"
+          font-family="ui-monospace, Consolas, monospace">9/12</text>
+    <text x="725.2" y="216" fill="#e8eef7" font-size="13" font-weight="600">questions answered faster</text>
+    <text x="725.2" y="236" fill="#5d6b7f" font-size="11.5">with pre-step</text>
+  </g>
+  <g>
+    <rect x="927.6" y="148" width="206.4" height="104" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="945.6" y="190" fill="#e8eef7" font-size="30" font-weight="700"
+          font-family="ui-monospace, Consolas, monospace">6</text>
+    <text x="945.6" y="216" fill="#e8eef7" font-size="13" font-weight="600">fewer stalls</text>
+    <text x="945.6" y="236" fill="#5d6b7f" font-size="11.5">2 vs 8 clarifications</text>
+  </g>
+
+  <g>
+    <rect x="46" y="286" width="400" height="300" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="66" y="316" fill="#e8eef7" font-size="14" font-weight="700">Accuracy</text>
+    
+  <g>
+    <path d="M 78.0 454 A 76 76 0 0 1 230.0 454" fill="none"
+          stroke="#232c3a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 78.0 454 A 76 76 0 0 1 230.0 454" fill="none"
+          stroke="#6fc3e8" stroke-width="14" stroke-linecap="round"
+          stroke-dasharray="238.76 238.76"/>
+    <text x="154.0" y="440" fill="#6fc3e8" font-size="34" font-weight="700"
+          text-anchor="middle" font-family="ui-monospace, Consolas, monospace">100%</text>
+    <text x="154.0" y="476" fill="#8e9cb0" font-size="12.5" text-anchor="middle"
+          font-weight="600">with pre-step</text>
+  </g>
+    
+  <g>
+    <path d="M 262.0 454 A 76 76 0 0 1 414.0 454" fill="none"
+          stroke="#232c3a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 262.0 454 A 76 76 0 0 1 414.0 454" fill="none"
+          stroke="#e8825f" stroke-width="14" stroke-linecap="round"
+          stroke-dasharray="119.38 238.76"/>
+    <text x="338.0" y="440" fill="#e8825f" font-size="34" font-weight="700"
+          text-anchor="middle" font-family="ui-monospace, Consolas, monospace">50%</text>
+    <text x="338.0" y="476" fill="#8e9cb0" font-size="12.5" text-anchor="middle"
+          font-weight="600">without</text>
+  </g>
+    <text x="66" y="568" fill="#5d6b7f" font-size="11.5">
+      12/12 vs 6/12 correct · exact-fact scoring, no judgement calls
+    </text>
+  </g>
+
+  <g>
+    <rect x="466" y="286" width="668" height="300" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="486" y="316" fill="#e8eef7" font-size="14" font-weight="700">
+      Running accuracy as the questions come in
+    </text>
+    <line x1="520" y1="534.0" x2="1108" y2="534.0" stroke="#232c3a"/><text x="510" y="538.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">0%</text><line x1="520" y1="485.0" x2="1108" y2="485.0" stroke="#232c3a"/><text x="510" y="489.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">25%</text><line x1="520" y1="436.0" x2="1108" y2="436.0" stroke="#232c3a"/><text x="510" y="440.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">50%</text><line x1="520" y1="387.0" x2="1108" y2="387.0" stroke="#232c3a"/><text x="510" y="391.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">75%</text><line x1="520" y1="338.0" x2="1108" y2="338.0" stroke="#232c3a"/><text x="510" y="342.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">100%</text>
+    <path d="M 520.0 534.0 C 528.9 534.0 555.6 544.9 573.5 534.0 C 591.3 523.1 609.1 476.8 626.9 468.7 C 644.7 460.5 662.5 480.6 680.4 485.0 C 698.2 489.4 716.0 497.5 733.8 494.8 C 751.6 492.1 769.5 476.1 787.3 468.7 C 805.1 461.2 822.9 455.4 840.7 450.0 C 858.5 444.6 876.4 436.5 894.2 436.0 C 912.0 435.5 929.8 446.9 947.6 446.9 C 965.5 446.9 983.3 439.3 1001.1 436.0 C 1018.9 432.7 1036.7 427.1 1054.5 427.1 C 1072.4 427.1 1099.1 434.5 1108.0 436.0" fill="none" stroke="#e8825f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 520.0 338.0 C 528.9 338.0 555.6 338.0 573.5 338.0 C 591.3 338.0 609.1 338.0 626.9 338.0 C 644.7 338.0 662.5 338.0 680.4 338.0 C 698.2 338.0 716.0 338.0 733.8 338.0 C 751.6 338.0 769.5 338.0 787.3 338.0 C 805.1 338.0 822.9 338.0 840.7 338.0 C 858.5 338.0 876.4 338.0 894.2 338.0 C 912.0 338.0 929.8 338.0 947.6 338.0 C 965.5 338.0 983.3 338.0 1001.1 338.0 C 1018.9 338.0 1036.7 338.0 1054.5 338.0 C 1072.4 338.0 1099.1 338.0 1108.0 338.0" fill="none" stroke="#6fc3e8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="520.0" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="573.5" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="626.9" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="680.4" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="733.8" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="787.3" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="840.7" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="894.2" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="947.6" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="1001.1" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="1054.5" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="1108.0" cy="338.0" r="3" fill="#6fc3e8"/><circle cx="520.0" cy="534.0" r="3" fill="#e8825f"/><circle cx="573.5" cy="534.0" r="3" fill="#e8825f"/><circle cx="626.9" cy="468.7" r="3" fill="#e8825f"/><circle cx="680.4" cy="485.0" r="3" fill="#e8825f"/><circle cx="733.8" cy="494.8" r="3" fill="#e8825f"/><circle cx="787.3" cy="468.7" r="3" fill="#e8825f"/><circle cx="840.7" cy="450.0" r="3" fill="#e8825f"/><circle cx="894.2" cy="436.0" r="3" fill="#e8825f"/><circle cx="947.6" cy="446.9" r="3" fill="#e8825f"/><circle cx="1001.1" cy="436.0" r="3" fill="#e8825f"/><circle cx="1054.5" cy="427.1" r="3" fill="#e8825f"/><circle cx="1108.0" cy="436.0" r="3" fill="#e8825f"/>
+    <text x="1108" y="324.0" fill="#6fc3e8" font-size="12" font-weight="700"
+          text-anchor="end">with pre-step — never drops</text>
+    <text x="1108" y="564.0" fill="#e8825f" font-size="12" font-weight="700"
+          text-anchor="end">without — settles at 50%</text>
+    <text x="486" y="568" fill="#5d6b7f" font-size="11.5">
+      question number 1 → 12
+    </text>
+  </g>
+
+  <g>
+    <rect x="46" y="608" width="1088" height="300" rx="10" fill="#1a2130" stroke="#2a3444"/>
+    <text x="66" y="638" fill="#e8eef7" font-size="14" font-weight="700">
+      Time to answer, every question — the closer the endpoints, the less the note mattered
+    </text>
+    <line x1="256" y1="862.0" x2="1094" y2="862.0" stroke="#232c3a"/><text x="246" y="866.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">0ms</text><line x1="256" y1="812.0" x2="1094" y2="812.0" stroke="#232c3a"/><text x="246" y="816.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">8.6s</text><line x1="256" y1="762.0" x2="1094" y2="762.0" stroke="#232c3a"/><text x="246" y="766.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">17.2s</text><line x1="256" y1="712.0" x2="1094" y2="712.0" stroke="#232c3a"/><text x="246" y="716.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">25.9s</text><line x1="256" y1="662.0" x2="1094" y2="662.0" stroke="#232c3a"/><text x="246" y="666.0" fill="#5d6b7f" font-size="11" text-anchor="end" font-family="ui-monospace, Consolas, monospace">34.5s</text>
+    <path d="M 256 851.7 C 346 851.7 1004 734.9 1094 734.9" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="851.7" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="734.9" r="3.6" fill="#e8825f"/><text x="240" y="666.0" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-run</text><path d="M 256 859.0 C 346 859.0 1004 840.5 1094 840.5" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="859.0" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="840.5" r="3.6" fill="#e8825f"/><text x="240" y="684.2" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-port</text><path d="M 256 858.6 C 346 858.6 1004 813.1 1094 813.1" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="858.6" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="813.1" r="3.6" fill="#e8825f"/><text x="240" y="702.4" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-db</text><path d="M 256 856.0 C 346 856.0 1004 815.4 1094 815.4" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="856.0" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="815.4" r="3.6" fill="#e8825f"/><text x="240" y="720.5" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-deploy</text><path d="M 256 857.4 C 346 857.4 1004 779.2 1094 779.2" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="857.4" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="779.2" r="3.6" fill="#e8825f"/><text x="240" y="738.7" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-serve-tests</text><path d="M 256 857.8 C 346 857.8 1004 803.3 1094 803.3" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="857.8" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="803.3" r="3.6" fill="#e8825f"/><text x="240" y="756.9" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">aurora-owner</text><path d="M 256 662.0 C 346 662.0 1004 820.3 1094 820.3" fill="none" stroke="#8e9cb0" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/><circle cx="256" cy="662.0" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="820.3" r="3.6" fill="#e8825f"/><text x="240" y="775.1" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">generic-code</text><path d="M 256 857.0 C 346 857.0 1004 856.5 1094 856.5" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="857.0" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="856.5" r="3.6" fill="#e8825f"/><text x="240" y="793.3" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">generic-chat</text><path d="M 256 857.6 C 346 857.6 1004 838.1 1094 838.1" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="857.6" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="838.1" r="3.6" fill="#e8825f"/><text x="240" y="811.5" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">infra-host</text><path d="M 256 800.6 C 346 800.6 1004 820.3 1094 820.3" fill="none" stroke="#8e9cb0" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/><circle cx="256" cy="800.6" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="820.3" r="3.6" fill="#e8825f"/><text x="240" y="829.6" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">web-live</text><path d="M 256 842.3 C 346 842.3 1004 850.2 1094 850.2" fill="none" stroke="#8e9cb0" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/><circle cx="256" cy="842.3" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="850.2" r="3.6" fill="#e8825f"/><text x="240" y="847.8" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">ambiguous-short</text><path d="M 256 800.8 C 346 800.8 1004 800.4 1094 800.4" fill="none" stroke="#6fc3e8" stroke-width="2.2" opacity="0.95" stroke-linecap="round"/><circle cx="256" cy="800.8" r="3.6" fill="#6fc3e8"/><circle cx="1094" cy="800.4" r="3.6" fill="#e8825f"/><text x="240" y="866.0" fill="#8e9cb0" font-size="11.5" text-anchor="end" font-family="ui-monospace, Consolas, monospace">trap-wrong-domain</text>
+    <text x="256" y="892" fill="#6fc3e8" font-size="12" font-weight="700">◀ with pre-step</text>
+    <text x="1094" y="892" fill="#e8825f" font-size="12" font-weight="700"
+          text-anchor="end">without ▶</text>
+  </g>
+
+  <g>
+    <rect x="46" y="930" width="1088" height="128" rx="10" fill="#1a2130"
+          stroke="#e8825f" stroke-width="1.2"/>
+    <rect x="46" y="930" width="4" height="128" rx="2" fill="#e8825f"/>
+    <text x="70" y="960" fill="#e8825f" font-size="12.5" font-weight="700">
+      WHAT "WITHOUT" DOES WHEN IT DOESN'T KNOW — asked: "What port does aurora listen on locally?"
+    </text>
+    <text x="70" y="988" fill="#e8eef7" font-size="13.5" font-style="italic">
+      "Apache Aurora's scheduler listens locally on port 8081 by default…
+    </text>
+    <text x="70" y="1010" fill="#e8eef7" font-size="13.5" font-style="italic">
+      If you meant Amazon Aurora, the default port depends on the engine: Aurora MySQL 3306, Aurora PostgreSQL 5432…"
+    </text>
+    <text x="70" y="1038" fill="#8e9cb0" font-size="12">
+      It never said "I don't know" — it named two unrelated products and two wrong ports, with total confidence.
+    </text>
+  </g>
+  <text x="46" y="1080" fill="#5d6b7f" font-size="11">
+    Nimble9B-skills · local 9B classifier, ~596ms overhead · scoring is exact-fact substring match
+  </text>
+</svg>
