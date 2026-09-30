@@ -242,7 +242,7 @@ Everything is scored against fixed expected facts, so it can't be argued with.
 | Median response time | **947ms** | 7,615ms |
 | Had to ask for clarification | 2 | 8 |
 
-![with vs without](benchmarks/charts/with-vs-without.svg)
+![Answer accuracy with and without the Nimble pre-step](benchmarks/charts/comparison.svg)
 
 **The interesting part is not the ones it got right — it's the ones it got wrong, and how.**
 
