@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="626"
+     viewBox="0 0 900 626" role="img"
+     aria-label="Same model, same questions — with and without the Nimble pre-step">
+  <rect width="900" height="626" fill="#131720"/>
+  <text x="70" y="58" fill="#e6edf3" font-size="23" font-weight="700"
+        font-family="system-ui, -apple-system, Segoe UI, sans-serif">Same model, same questions — with and without the Nimble pre-step</text>
+  <text x="70" y="88" fill="#8b98a9" font-size="14">model: deepseek-v4.1-flash &nbsp;·&nbsp; 12 cases &nbsp;·&nbsp; higher is better, except time</text>
+  <text x="70" y="112" fill="#8b98a9" font-size="12" font-family="ui-monospace, Consolas, monospace">
+    generated 2026-09-30T13:47:53 — reproduce with benchmarks/run_benchmark.py
+  </text>
+  <line x1="70" y1="126" x2="830" y2="126" stroke="#232a36" stroke-width="1"/>
+
+  <g>
+    <text x="70" y="140" fill="#e6edf3" font-size="15" font-weight="600">Answers the question correctly</text>
+    <rect x="70" y="150" width="560" height="22" rx="5" fill="#232a36"/>
+    <rect x="70" y="150" width="560" height="22" rx="5" fill="#6fc3e8"/>
+    <text x="646" y="167" fill="#8b98a9" font-size="15"
+          font-family="ui-monospace, Consolas, monospace">100%  (with pre-step)</text>
+  </g>
+  <g>
+    <text x="70" y="220" fill="#e6edf3" font-size="15" font-weight="600">Answers the question correctly</text>
+    <rect x="70" y="230" width="560" height="22" rx="5" fill="#232a36"/>
+    <rect x="70" y="230" width="280" height="22" rx="5" fill="#e8a06f"/>
+    <text x="646" y="247" fill="#8b98a9" font-size="15"
+          font-family="ui-monospace, Consolas, monospace">50%  (without)</text>
+  </g>
+  <g>
+    <text x="70" y="300" fill="#e6edf3" font-size="15" font-weight="600">Response time (lower is better)</text>
+    <rect x="70" y="310" width="560" height="22" rx="5" fill="#232a36"/>
+    <rect x="70" y="310" width="69" height="22" rx="5" fill="#6fc3e8"/>
+    <text x="646" y="327" fill="#8b98a9" font-size="15"
+          font-family="ui-monospace, Consolas, monospace">947ms  (with pre-step)</text>
+  </g>
+  <g>
+    <text x="70" y="380" fill="#e6edf3" font-size="15" font-weight="600">Response time (lower is better)</text>
+    <rect x="70" y="390" width="560" height="22" rx="5" fill="#232a36"/>
+    <rect x="70" y="390" width="560" height="22" rx="5" fill="#e8a06f"/>
+    <text x="646" y="407" fill="#8b98a9" font-size="15"
+          font-family="ui-monospace, Consolas, monospace">7.6s  (without)</text>
+  </g>
+</svg>

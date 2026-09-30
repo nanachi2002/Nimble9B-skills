@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Benchmark output — regenerate with `python benchmarks/run_benchmark.py`
+benchmarks/results/*.json
+!benchmarks/results/.gitkeep
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Never commit keys or local secrets
+.env
+*.key
+key.tmp
+
+# local run logs
+live_run.log
+nohup.out

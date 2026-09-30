@@ -1,0 +1,86 @@
+[
+  {
+    "id": "aurora-run",
+    "question": "How do I start the aurora backend on my own machine?",
+    "domain": "aurora",
+    "expect_all": ["make serve"],
+    "why": "Answerable ONLY from the injected ground truth — without it the model must guess or ask."
+  },
+  {
+    "id": "aurora-port",
+    "question": "What port does aurora listen on locally?",
+    "domain": "aurora",
+    "expect_all": ["8080"],
+    "why": "A single project-specific fact. Nothing in the question reveals it."
+  },
+  {
+    "id": "aurora-db",
+    "question": "Which database should I point aurora at during development?",
+    "domain": "aurora",
+    "expect_all": ["aurora_dev"],
+    "why": "Tests that the model USES the note instead of reciting generic Postgres advice."
+  },
+  {
+    "id": "aurora-deploy",
+    "question": "What is the deploy path for aurora?",
+    "domain": "aurora",
+    "expect_all": ["release"],
+    "why": "Ground truth names the branch; a plausible generic answer would name 'main'."
+  },
+  {
+    "id": "aurora-serve-tests",
+    "question": "How do I run aurora's test suite?",
+    "domain": "aurora",
+    "expect_all": ["make test"],
+    "why": "Paired with aurora-run: same shape, different command, catches a model that pattern-matches."
+  },
+  {
+    "id": "aurora-owner",
+    "question": "Who owns the aurora service if I need a change reviewed?",
+    "domain": "aurora",
+    "expect_all": ["platform"],
+    "why": "Pure lookup. Impossible without the note."
+  },
+  {
+    "id": "generic-code",
+    "question": "Explain how a hash map handles collisions.",
+    "domain": "code",
+    "expect_all": ["collision"],
+    "why": "CONTROL: no ground truth applies, so WITH and WITHOUT should score the same. Proves the pre-step is not simply 'more tokens = better'."
+  },
+  {
+    "id": "generic-chat",
+    "question": "hey, good morning! how's it going?",
+    "domain": "chat",
+    "expect_all": ["morning"],
+    "why": "CONTROL: social message. The pre-step must not derail small talk."
+  },
+  {
+    "id": "infra-host",
+    "question": "Which machine runs the aurora staging database?",
+    "domain": "infra",
+    "expect_all": ["staging-db"],
+    "why": "Infra fact carried by the hint, not by the domain label."
+  },
+  {
+    "id": "web-live",
+    "question": "What is the latest stable Python release?",
+    "domain": "web",
+    "expect_all": ["python"],
+    "why": "Live-data case: the note should flag that a lookup is needed rather than the model answering from memory."
+  },
+  {
+    "id": "ambiguous-short",
+    "question": "it's broken again, fix it",
+    "domain": "none",
+    "expect_clarify": true,
+    "why": "Under-specified on purpose. The correct behaviour is to ask what's actually broken, not to guess. Scored on whether it asked, not on wording."
+  },
+  {
+    "id": "trap-wrong-domain",
+    "question": "The aurora frontend build keeps failing on the icon sprite.",
+    "domain": "aurora",
+    "expect_all": ["aurora"],
+    "why": "TRAP: mentions a different subsystem. Tests that the note is not blindly trusted over the actual question."
+  }
+]

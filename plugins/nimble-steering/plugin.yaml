@@ -1,0 +1,9 @@
+name: nimble-steering
+version: 1.0.0
+description: Hidden decision pre-step powered by the local Nimble 9B decision model (Ollama /v1/systemone) — routes each turn and gates risky tool calls. Armed per session with /nimble boot.
+author: nanachi2002
+provides_tools:
+  - nimble_decide
+provides_hooks:
+  - pre_llm_call
+  - pre_tool_call
